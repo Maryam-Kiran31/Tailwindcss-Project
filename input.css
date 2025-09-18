@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss"; 
+@custom-variant dark (&:where(.dark, .dark *));
+@layer components{
+    .btn-primary{
+        @apply bg-blue-700 text-white;
+    }
+    .gallery-project{
+        @apply size-70 hover:scale-110 transition duration-1000 rounded border-4 border-gray-400 hover:brightness-125;
+    }
+}
